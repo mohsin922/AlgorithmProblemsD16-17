@@ -6,17 +6,16 @@ namespace AlgorithmProbs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Algorithm Problems!");
-            InsertionSort insertionSort = new InsertionSort();
-            int[] arr = { 37, 72, 24, 93, 41, 55, 89 };
-            Console.WriteLine("\nArray before Insertion Sort: ");
-            int n = arr.Length;
-            for (int i = 0; i < n; i++)
+            int[] arr1 = { 23, 52, 84, 63, 41, 95, 29 };
+            Console.WriteLine("The Array Before Bubble Sort : ");
+            int n = arr1.Length;
+            for (int i = 0; i < n; ++i)
             {
-                Console.Write(arr[i] + " ");
+                Console.Write(arr1[i] + " ");
             }
-            insertionSort.Sort(arr);
-            insertionSort.PrintArray(arr);
+            BubbleSort.BubbleSortArray(arr1);
+            BubbleSort.PrintArray(arr1);
+
         }
     }
 }
